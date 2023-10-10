@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct 页面脚手架<背景: View, 标题: View>: View {
+public struct 页面脚手架<背景: View, 标题: View>: View {
     let 背景区域: 背景
     let 标题区域: 标题
     
@@ -13,7 +13,7 @@ struct 页面脚手架<背景: View, 标题: View>: View {
         self.标题区域 = 标题()
     }
     
-    var body: some View {
+    public var body: some View {
         ZStack {
             背景区域
             标题区域
